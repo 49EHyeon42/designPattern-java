@@ -1,5 +1,3 @@
-// https://refactoring.guru/design-patterns/factory-method
-
 import factory.Dialog;
 import factory.HtmlDialog;
 import factory.WindowsDialog;
