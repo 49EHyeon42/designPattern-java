@@ -1,5 +1,3 @@
-// https://refactoring.guru/design-patterns/prototype
-
 import java.util.ArrayList;
 import java.util.List;
 import shapes.Circle;
