@@ -1,19 +1,25 @@
-// https://refactoring.guru/design-patterns/abstract-factory#:~:text=Abstract%20Factory%20is%20a%20creational,without%20specifying%20their%20concrete%20classes.
+import app.Application;
+import factories.GUIFactory;
+import factories.MacOSFactory;
+import factories.WindowsFactory;
 
 public class Main {
 
     public static void main(String[] args) {
-        Application application;
-        FurnitureFactory furnitureFactory;
+        Application app = configureApplication();
+        app.paint();
+    }
 
-        // example victorian factory
-        furnitureFactory = new VictorianFurnitureFactory();
-        application = new Application(furnitureFactory);
-        application.hasLegs();
-
-        // example modern factory
-        furnitureFactory = new ModernFurnitureFactory();
-        application = new Application(furnitureFactory);
-        application.coffeeTableTestMethod1();
+    private static Application configureApplication() {
+        Application app;
+        GUIFactory factory;
+        String osName = System.getProperty("os.name").toLowerCase();
+        if (osName.contains("mac")) {
+            factory = new MacOSFactory();
+        } else {
+            factory = new WindowsFactory();
+        }
+        app = new Application(factory);
+        return app;
     }
 }
