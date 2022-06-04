@@ -27,3 +27,25 @@
 ### [Flyweight](https://refactoring.guru/design-patterns/flyweight)
 
 ### [Proxy](https://refactoring.guru/design-patterns/proxy)
+
+## [Behavioral Pattern](https://refactoring.guru/design-patterns/behavioral-patterns)
+
+### [chain of responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+
+### [command](https://refactoring.guru/design-patterns/command)
+
+### [iterator](https://refactoring.guru/design-patterns/iterator)
+
+### [mediator](https://refactoring.guru/design-patterns/mediator)
+
+### [memento](https://refactoring.guru/design-patterns/memento)
+
+### [observer](https://refactoring.guru/design-patterns/observer)
+
+### [state](https://refactoring.guru/design-patterns/state)
+
+### [strategy](https://refactoring.guru/design-patterns/strategy)
+
+### [template method](https://refactoring.guru/design-patterns/template-method)
+
+### [visitor](https://refactoring.guru/design-patterns/visitor)
